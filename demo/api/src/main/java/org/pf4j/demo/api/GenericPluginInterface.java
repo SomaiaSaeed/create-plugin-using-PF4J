@@ -19,5 +19,5 @@ import java.util.HashMap;
 import org.pf4j.ExtensionPoint;
 
 public interface GenericPluginInterface extends ExtensionPoint {
-	HashMap<String, String> runPlugin(HashMap<String, String> inp);
+	HashMap<String, Object> runPlugin(HashMap<String, Object> inp);
 }

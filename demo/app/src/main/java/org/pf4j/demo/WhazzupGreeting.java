@@ -26,7 +26,7 @@ import org.pf4j.demo.api.GenericPluginInterface;
 public class WhazzupGreeting implements GenericPluginInterface {
 
 	@Override
-	public HashMap<String, String> runPlugin(HashMap<String, String> inp) {
+	public HashMap<String, Object> runPlugin(HashMap<String, Object> inp) {
 		// TODO Auto-generated method stub
 		return null;
 	}
