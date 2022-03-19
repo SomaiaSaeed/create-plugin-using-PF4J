@@ -75,7 +75,11 @@
 			<version>${project.version}</version>
 		</dependency>
 
-		
+		<dependency>
+			<groupId>io.github.somaiasaeed</groupId>
+			<artifactId>pf4j-generic-plugin</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
 
 		<!-- Logs -->
 		<dependency>
@@ -94,11 +98,6 @@
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
 			<version>2.4</version>
-		</dependency>
-		<dependency>
-			<groupId>io.github.somaiasaeed</groupId>
-			<artifactId>pf4j-generic-plugin</artifactId>
-			<version>1.0.2</version>
 		</dependency>
 
 		<dependency>

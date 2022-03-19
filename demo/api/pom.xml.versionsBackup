@@ -6,7 +6,7 @@
 
 	<groupId>io.github.somaiasaeed</groupId>
 	<artifactId>pf4j-generic-plugin</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.0-SNAPSHOT</version>
 
 
 	<packaging>jar</packaging>
@@ -14,10 +14,10 @@
 	<description>A Generic interface to include in Smart2Go to support plugin.</description>
 	<url>https://github.com/SomaiaSaeed/create-plugin-using-PF4J</url>
 
-	<properties>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-	</properties>
+<properties>
+     <maven.compiler.source>1.8</maven.compiler.source>
+     <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
 	<licenses>
 		<license>
 			<name>MIT License</name>
@@ -89,7 +89,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>3.2.0</version>
+				<version>2.9.1</version>
 				<executions>
 					<execution>
 						<id>attach-javadocs</id>
@@ -102,7 +102,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-gpg-plugin</artifactId>
-				<version>1.5</version>
+      <version>1.5</version>
 				<executions>
 					<execution>
 						<id>sign-artifacts</id>
@@ -111,16 +111,16 @@
 							<goal>sign</goal>
 						</goals>
 						<configuration>
-							<keyname>0xFAAFA870</keyname>
-							<passphraseServerId>0xFAAFA870</passphraseServerId>
-						</configuration>
+            <keyname>0xFAAFA870</keyname>
+            <passphraseServerId>0xFAAFA870</passphraseServerId>
+          </configuration>
 					</execution>
 				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-gpg-plugin</artifactId>
-				<version>1.5</version>
+				      <version>1.5</version>
 
 				<executions>
 					<execution>
@@ -151,7 +151,8 @@
 		<dependency>
 			<groupId>org.pf4j</groupId>
 			<artifactId>pf4j-spring</artifactId>
-			<version>0.7.0</version>
+			<version>${project.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
@@ -165,11 +166,6 @@
 			<artifactId>pf4j-spring</artifactId>
 			<version>0.7.0</version>
 			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-			<version>5.3.16</version>
 		</dependency>
 	</dependencies>
 
